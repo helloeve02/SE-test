@@ -47,7 +47,7 @@ func main() {
    r.POST("/signup", users.SignUp)
 
    r.POST("/signin", users.SignIn)
-
+//    r.GET("/users", users.GetAll)
 
    router := r.Group("/")
 
@@ -58,13 +58,10 @@ func main() {
 
        // User Route
 
-       router.PUT("/user/:id", users.Update)
-
-       router.GET("/users", users.GetAll)
-
-       router.GET("/user/:id", users.Get)
-
-       router.DELETE("/user/:id", users.Delete)
+       router.GET("/users", users.ListUsers) 
+       router.POST("/users", users.CreateUser)
+       router.PUT("/users/:id", users.UpdateUserByid)
+       router.DELETE("/users/:id", users.DeleteUser)
 
 
    }

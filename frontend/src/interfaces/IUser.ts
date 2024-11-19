@@ -1,21 +1,11 @@
 export interface UsersInterface {
-
-    ID?: number;
-  
-    FirstName?: string;
-  
-    LastName?: string;
-  
-    Email?: string;
-  
-    Phone?: string;
-  
-    Age?: number;
-  
-    BirthDay?: string;
-  
-    GenderID?: number;
-  
-    Password?: string;
-  
-  }
+  ID?: number;
+  email?: string;
+  UserName?: string;
+  Password?: string;
+  role?: string;
+  FirstName?: string;
+  lastname?: string;
+  phonenumber?: string;
+  Seller?: boolean;
+}

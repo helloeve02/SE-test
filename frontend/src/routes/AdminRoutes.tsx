@@ -2,7 +2,7 @@ import { lazy } from "react";
 import { RouteObject } from "react-router-dom";
 import Loadable from "../components/third-patry/Loadable";
 import FullLayout from "../Layout/FullLayout";
-const MainPages = Loadable(lazy(() => import("../pages/authentication/Login")));
+const MainPages = Loadable(lazy(() => import("../pages/authentication/Login/login")));
 const Dashboard = Loadable(lazy(() => import("../pages/dashboard")));
 const EditCustomer = Loadable(lazy(() => import("../pages/customer/edit")));
 const SellerCenter = Loadable(lazy(() => import("../pages/sellercenter")));

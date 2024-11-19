@@ -6,7 +6,7 @@ import { RouteObject } from "react-router-dom";
 
 import Loadable from "../components/third-patry/Loadable";
 
-const MainPages = Loadable(lazy(() => import("../pages/authentication/Login")));
+const MainPages = Loadable(lazy(() => import("../pages/authentication/Login/login")));
 
 const Registerages = Loadable(
   lazy(() => import("../pages/authentication/Register"))

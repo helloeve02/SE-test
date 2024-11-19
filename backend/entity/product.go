@@ -8,4 +8,12 @@ type Products struct {
 	Description string
 	Price int
 	Stock uint
+
+	// BrandID	uint
+	// StatusID	uint
+	UserID		uint
+	// CategoryID	uint
+
+	Cartitem	[]CartItems	`gorm:"foreignKey:ProductID"`
+	Orderitem	[]OrderItems `gorm:"foreignKey:ProductID"`
 }
