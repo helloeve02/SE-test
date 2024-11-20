@@ -1,6 +1,6 @@
-import { lazy } from "react";
-
 import React from "react";
+
+import { lazy } from "react";
 
 import { RouteObject } from "react-router-dom";
 
@@ -9,7 +9,7 @@ import Loadable from "../components/third-patry/Loadable";
 const MainPages = Loadable(lazy(() => import("../pages/authentication/Login/login")));
 
 const Registerages = Loadable(
-  lazy(() => import("../pages/authentication/Register"))
+  lazy(() => import("../pages/authentication/Register/signup"))
 );
 
 const MainRoutes = (): RouteObject => {

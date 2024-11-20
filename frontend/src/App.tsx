@@ -8,9 +8,8 @@ const App: React.FC = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<Login />} />
-        {/* ConfigRoutes ควรถูกจัดการให้รองรับการนำเข้า Routes ด้วย */}
-        <Route path="/" element={<ConfigRoutes />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/ConfigRoutes" element={<ConfigRoutes />} />
       </Routes>
     </Router>
   );
